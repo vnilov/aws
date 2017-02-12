@@ -13,7 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        Commands\ArchiveLJ::class
+        Commands\ArchiveLJ::class,
+        Commands\NewLJ::class
     ];
 
     /**
@@ -25,5 +26,6 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         //$schedule->command('lj-archive:start 10')->everyMinute();
+        $schedule->command('lj-new:start 1')->everyMinute();
     }
 }
