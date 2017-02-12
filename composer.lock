@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "876bbe8c5294f7de00057adce0b726a9",
+    "content-hash": "12ba84e01c91837605590874e4af2374",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.22.1",
+            "version": "3.22.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "db6711a3f82e8dc3486ae9b3a51ed3b4a58f939d"
+                "reference": "9c64476e56091baf1202d7deffb9094fe87472e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/db6711a3f82e8dc3486ae9b3a51ed3b4a58f939d",
-                "reference": "db6711a3f82e8dc3486ae9b3a51ed3b4a58f939d",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9c64476e56091baf1202d7deffb9094fe87472e0",
+                "reference": "9c64476e56091baf1202d7deffb9094fe87472e0",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +84,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2017-02-09T21:01:18+00:00"
+            "time": "2017-02-10T23:27:07+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -1786,6 +1786,57 @@
                 "random"
             ],
             "time": "2016-11-07T23:38:38+00:00"
+        },
+        {
+            "name": "phpxmlrpc/phpxmlrpc",
+            "version": "4.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gggeek/phpxmlrpc.git",
+                "reference": "e7b08a72aecd879884bc85988640cf49302ce041"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gggeek/phpxmlrpc/zipball/e7b08a72aecd879884bc85988640cf49302ce041",
+                "reference": "e7b08a72aecd879884bc85988640cf49302ce041",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xml": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "docbook/docbook-xsl": "~1.78",
+                "ext-curl": "*",
+                "ext-mbstring": "*",
+                "indeyets/pake": "~1.99",
+                "phpunit/phpunit": ">=4.0.0",
+                "phpunit/phpunit-selenium": "*",
+                "sami/sami": "~3.1"
+            },
+            "suggest": {
+                "ext-curl": "Needed for HTTPS and HTTP 1.1 support, NTLM Auth etc...",
+                "ext-mbstring": "Needed to allow reception of requests/responses in character sets other than ASCII,LATIN-1,UTF-8",
+                "ext-zlib": "Needed for sending compressed requests and receiving compressed responses, if cURL is not available"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpXmlRpc\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "A php library for building xmlrpc clients and servers",
+            "homepage": "http://gggeek.github.io/phpxmlrpc/",
+            "keywords": [
+                "webservices",
+                "xmlrpc"
+            ],
+            "time": "2016-10-01T12:29:37+00:00"
         },
         {
             "name": "psr/http-message",
