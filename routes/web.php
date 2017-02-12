@@ -47,7 +47,7 @@ $app->get('/dynamo', function () {
 });
 
 $app->get('lj-test', function () {
-    $lj = new \App\Livejournal\Livejournal('junona', 'CTC2005trenirovka');
+   
     $lj->setUsejournal('stars365');
     $lj->setVer();
 
